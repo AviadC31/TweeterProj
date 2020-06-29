@@ -1,6 +1,6 @@
 const renderer = Renderer()
+const tweeter = Tweeter()
 renderer.renderPosts(tweeter.getPosts())
-
 
 $('#post').on('click', function () {
     tweeter.addPost($(this).closest("#container").find("input").val())
@@ -19,7 +19,7 @@ $('#posts').on('click', '.commentAdd', function () {
     renderer.renderPosts(tweeter.getPosts())
 })
 
-$('#posts').on('click','.delete-comment', function () {
+$('#posts').on('click', '.delete-comment', function () {
     tweeter.removeComment($(this).parent().parent().data().id, $(this).parent().data().id)
     renderer.renderPosts(tweeter.getPosts())
 })

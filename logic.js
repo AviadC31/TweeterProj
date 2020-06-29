@@ -1,9 +1,9 @@
-let posts = []
-let comments = []
-let postIdCounter = 0
-let commentIdCounter = 0
-
 function Tweeter() {
+
+    let posts = []
+    let comments = []
+    let postIdCounter = 0
+    let commentIdCounter = 0
 
     function getPosts() {
         return posts
@@ -21,7 +21,6 @@ function Tweeter() {
 
         for (let post in posts) {
             if (posts[post].id === postID) {
-                // postIdCounter--
                 posts.splice(post, 1)
                 break
             }
@@ -45,7 +44,6 @@ function Tweeter() {
                 for (let comIndex in post.comments) {
                     if (post.comments[comIndex].id === commentID) {
                         post.comments.splice(comIndex, 1)
-                        // commentIdCounter--
                         break
                     }
                 }
@@ -60,5 +58,5 @@ function Tweeter() {
         removeComment
     }
 }
-const tweeter = Tweeter()
+
 
