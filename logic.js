@@ -50,6 +50,7 @@ function Tweeter() {
         }
         return
     }
+
     return {
         addPost,
         removePost,

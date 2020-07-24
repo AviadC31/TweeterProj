@@ -4,16 +4,15 @@ body{
 }
 
 .imgSize {
-    width: 5vw;
+  width: 5vw;
   display: inline-block;
   top: 50px;
 }
 
-/* resize images */
 .imgSize img {
     width: 50%;
-   
 }
+
 #container{
     display: grid;
     grid-gap: 20px;
@@ -52,7 +51,6 @@ body{
     background-color: rgb(12, 143, 77);
     border: 1px solid #070000;
     box-shadow: 1px 1px 10px #d4e3f5;
-    /* cursor: pointer; */
     display: flex;
     justify-content: center;
     font-size: 2vw;
@@ -81,7 +79,6 @@ body{
     border-radius: 5px;
     padding: 10px;
     background-color: rgba(255, 253, 249, 0.164);
-    
 }
 
 #post:active{
@@ -97,8 +94,7 @@ body{
     margin: 10px;
     box-shadow: 1px 1px 5px #00000034;
     border: 1px solid #4d4d4d09;
-    background-color: rgba(209, 204, 204, 0.356);
-    
+    background-color: rgba(209, 204, 204, 0.356);   
 }
 
 .delete{
@@ -122,6 +118,11 @@ body{
     margin-top: 0;
     font-size:20px;
     font-weight: bolder;
+}
+#title:hover {
+	background:linear-gradient(to bottom, #0ea03f 5%, #0b8564 100%);
+    background-color:#000000;
+    color: white;
 }
 #post:hover {
 	background:linear-gradient(to bottom, #0ea03f 5%, #0b8564 100%);
